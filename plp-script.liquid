@@ -1,7 +1,10 @@
-PLP Script
+{%- comment -%}
+// PLP Script
+// ----------------active---------------
+
+{%- endcomment -%}
 
 
-----------------active---------------
 <script>
 
 let args = {
@@ -32,11 +35,15 @@ window.dataLayer = window.dataLayer || [];
 window.dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
 window.dataLayer.push(args);
 
+</script>
 
 
-
-
+{%- comment -%}
 -------------------original draft------------------
+{%- endcomment -%}
+
+<script>
+
 let args = {
    'event': 'view_item_list',
    'page_type': 'PLP',
@@ -70,3 +77,5 @@ let args = {
 window.dataLayer = window.dataLayer || [];
 window.dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
 window.dataLayer.push(args);
+
+</script>
